@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        gameOver = false; 
+        gameOver = false;
     }
 
     void Update()
