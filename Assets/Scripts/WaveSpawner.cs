@@ -21,6 +21,8 @@ public class WaveSpawner : MonoBehaviour
 
     private IEnumerator SpawnWavesForever()
     {
+        yield return new WaitForSeconds(10f); // 10 second delay before first wave
+
         while (true)
         {
             yield return StartCoroutine(SpawnWave());
