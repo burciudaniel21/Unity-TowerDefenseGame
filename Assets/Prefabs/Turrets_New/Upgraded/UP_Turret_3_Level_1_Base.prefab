@@ -93,6 +93,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -119,9 +124,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &1612767157003131501
 MonoBehaviour:
@@ -135,15 +142,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 492f06cf4fa02b84da18929a3fb87194, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 40
-  bulletPrefab: {fileID: 4021314127455141860, guid: 02ee7fc8ca9962d4ba635d83f6b1e243, type: 3}
+  range: 23
+  bulletPrefab: {fileID: 4021314127455141860, guid: 9860856efff67074cbaf78af6a22ee77, type: 3}
   fireRate: 0.45
   useLaser: 0
   impactEffect: {fileID: 0}
   lineRenderer: {fileID: 0}
   impactLight: {fileID: 0}
   dmgOverTime: 30
-  slowPercentage: 0.5
+  slowPercentage: 0.4
   enemyTag: Enemy
   partToRotate: {fileID: 7465677589224407386}
   turretTurnSpeed: 7
@@ -160,6 +167,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.4
   m_Pitch: 1
@@ -335,6 +343,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -357,7 +370,9 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}

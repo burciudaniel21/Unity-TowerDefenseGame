@@ -3,14 +3,13 @@ using UnityEngine;
 [System.Serializable]
 public class Wave
 {
-    public GameObject[] enemies;
-    public float spawnRate;
-    public int minNumberOfEnemies; // Added minimum number of enemies
-    public int maxNumberOfEnemies;
+    [Header("Enemy Prefabs")]
+    public GameObject standardEnemy;
+    public GameObject fastEnemy;
+    public GameObject toughEnemy;
 
-    public GameObject GetRandomEnemy()
-    {
-        int randomIndex = Random.Range(0, enemies.Length);
-        return enemies[randomIndex];
-    }
+    [Header("Wave Settings")]
+    public float spawnRate = 1f;
+    public int minNumberOfEnemies = 3;
+    public int maxNumberOfEnemies = 6;
 }
