@@ -10,6 +10,12 @@ public class CameraController : MonoBehaviour
     public float scrollSpeed = 5f;
     public float minY = 10f;
     public float maxY = 80f;
+
+    public float minX = -50f;
+    public float maxX = 50f;
+
+    public float minZ = -50f;
+    public float maxZ = 50f;
     void Update()
     {
         if (GameManager.gameOver)
@@ -52,9 +58,18 @@ public class CameraController : MonoBehaviour
             transform.Rotate(Vector3.up * panSpeed * Time.deltaTime, Space.World);
         }
         float scroll = Input.GetAxis("Mouse ScrollWheel");
+
         Vector3 position = transform.position;
-        position.y -= scroll * 1000 /* multiply with 1000 because scroll wheel values are low*/ * scrollSpeed * Time.deltaTime;
-        position.y = Mathf.Clamp(position.y, minY, maxY); //this ensures that position.y will be between 10 and 80 (we can't scroll under the ground or too high up)
+
+        position.y -= scroll * 1000 * scrollSpeed * Time.deltaTime;
+
+        // Clamp height
+        position.y = Mathf.Clamp(position.y, minY, maxY);
+
+        // Clamp camera area
+        position.x = Mathf.Clamp(position.x, minX, maxX);
+        position.z = Mathf.Clamp(position.z, minZ, maxZ);
+
         transform.position = position;
     }
 }
