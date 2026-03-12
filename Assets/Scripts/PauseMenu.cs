@@ -1,49 +1,35 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject ui;
     public SceneFader Fader;
 
-
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             Toggle();
-
         }
     }
 
     public void Toggle()
     {
         ui.SetActive(!ui.activeSelf);
-
-        if(ui.activeSelf)
-        {
-            Time.timeScale = 0f;
-        }
-        else
-        {
-            Time.timeScale = 1f;
-        }
+        Time.timeScale = ui.activeSelf ? 0f : 1f;
     }
 
     public void Retry()
     {
-        Toggle();
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void Menu()
     {
+        ui.SetActive(false);
+        Time.timeScale = 1f;
         Fader.FadeTo("MainMenu");
-        //SceneManager.LoadScene("MainMenu");
-        Debug.Log("Go to menu");
     }
 }

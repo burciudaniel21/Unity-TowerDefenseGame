@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: d08c0b675f0b3b046b42ee0afe5cc806
-  - enabled: 1
+  - enabled: 0
     path: Assets/Gvozdilla/3D game model - stylized sailboat, ship with seagull/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level2.unity
     guid: f1c586c7e338147499a59dfae5c49207
   - enabled: 1
@@ -21,3 +21,4 @@ EditorBuildSettings:
     path: Assets/Scenes/Level1.unity
     guid: 3ea483c3196157d4c950c6f3d05c20f1
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
