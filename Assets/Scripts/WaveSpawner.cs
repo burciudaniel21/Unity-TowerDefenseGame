@@ -30,7 +30,7 @@ public class WaveSpawner : MonoBehaviour
     IEnumerator SpawnWave()
     {
         PlayerStats.roundsSurvived++;
-        waveCountdownText.text = Convert.ToString(PlayerStats.roundsSurvived);
+        waveCountdownText.text = $"Wave: "+ Convert.ToString(PlayerStats.roundsSurvived);
 
         if (PlayerStats.roundsSurvived % 10 == 0) // Check if it's a multiple of 10
         {

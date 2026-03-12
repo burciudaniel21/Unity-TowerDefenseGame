@@ -8,6 +8,6 @@ public class MoneyUI : MonoBehaviour
     [SerializeField] TMP_Text moneyText;
     private void Update()
     {
-        moneyText.text = "$" +PlayerStats.Money.ToString();
+        moneyText.text = "Gold:" +PlayerStats.Money.ToString();
     }
 }
