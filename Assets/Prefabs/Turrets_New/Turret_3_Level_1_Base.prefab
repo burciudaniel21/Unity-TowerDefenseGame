@@ -278,7 +278,8 @@ MonoBehaviour:
   partToRotate: {fileID: 7457911710939674772}
   turretTurnSpeed: 7
   firePoint: {fileID: 4801185316022155996}
-  attackSound: {fileID: 8300000, guid: 37e113bbe2e8f864aacb1fbcdf8bd493, type: 3}
+  goalPoint: {fileID: 0}
+  attackSound: {fileID: 8300000, guid: 975ce66436eef34488f78f0c0fdf0e08, type: 3}
 --- !u!82 &6493804744961253063
 AudioSource:
   m_ObjectHideFlags: 0

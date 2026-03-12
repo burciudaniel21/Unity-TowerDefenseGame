@@ -280,6 +280,7 @@ MonoBehaviour:
   partToRotate: {fileID: 24953263755412819}
   turretTurnSpeed: 7
   firePoint: {fileID: 1628763391220362725}
+  goalPoint: {fileID: 0}
   attackSound: {fileID: 8300000, guid: dc2170710e4c61c4eb1ed5535f90472f, type: 3}
 --- !u!64 &634031910280274915
 MeshCollider:
@@ -316,8 +317,8 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
-  m_Pitch: 1
+  m_Volume: 0.2
+  m_Pitch: 0.3
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -390,7 +391,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.3
       inSlope: 0
       outSlope: 0
       tangentMode: 0
